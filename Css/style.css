@@ -41,11 +41,11 @@ h2 {
 nav {
     max-width: 2560px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    
 }
 
 nav .logo {
@@ -80,7 +80,7 @@ nav .navlinks a:hover {
     color: #fff;
 }
 
-nav button {
+nav .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@ nav button {
     transition: all 0.3s ease;
 }
 
-nav button:hover {
+nav .button:hover {
     color: #782929;
     background: #fff;
     border-color: #dedede;
@@ -226,7 +226,15 @@ a.mail {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
+
+.event-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    border-color: #007BFF; /* Change border color on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
 
 .event-card img {
     width: 100%;
@@ -280,6 +288,10 @@ a.mail {
     height: auto;
     margin-top: 20px;
 }
+
+
+
+
 
 /* SoundCloud Section */
 .soundcloud {
@@ -537,13 +549,27 @@ footer a {
         display: none;
     }
 
+    a .button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+        font-size: 18px;
+        height: 32px;
+        width: 122px;
+        background: #000;
+        color: rgb(186, 25, 25);
+        border-radius: 8px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+    }
+
     .hero {
         margin-top: 213px;
         height: calc(100vh - -51px);
         flex-direction: column-reverse;
     }
     .hero>img {
-        width: 55%;
+        width: 100%;
     }
 
     .events {
@@ -563,4 +589,3 @@ footer a {
     }
 
 }
-
